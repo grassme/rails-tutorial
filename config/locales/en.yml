@@ -51,3 +51,6 @@ en:
     title: "Contact"
     content_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
     content_2: "contact page"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
