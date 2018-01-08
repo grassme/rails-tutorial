@@ -1,36 +1,36 @@
-en:
+vi:
   english: "English"
   vietnam: "Tieng Viet"
   home:
     title: "Sample App"
-    content_1: "This is the home page for the"
+    content_1: "Đây là trang chủ"
     content_2: "Ruby on Rails Tutorial"
     content_3: "sample application."
-    name: "Home"
-    signup: "Sign up now!"
+    name: "Trang chủ"
+    signup: "Đăng ký ngay!"
   help: 
-    title: "Help"
+    title: "Giúp đỡ"
     content_1: "Get help on the Ruby on Rails Tutorial at the"
     content_2: "Rails Tutorial help page"
-    content_3: "To get help on this sample app, see the"
+    content_3: "Để nhận sự giúp đỡ ứng dụng này, hay truy câp"
     content_4: "Ruby on Rails Tutorial"
-    content_5: "book"
+    content_5: "Sách"
   about:
-    title: "About"
+    title: "Giới thiệu"
     content_1: "Ruby on Rails Tutorial"
     content_2: "The is a book and screencast series to teach web development with Ruby on Rails. "
     content_3: "This is the sample application for the tutorial."
   contact:
-    title: "Contact"
+    title: "Liên hệ"
     content_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
     content_2: "contact page"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
-      about: "About"
+      about: "Giới thiệu"
   footer:
-    new: "News"
-    content_1: "by"
+    new: "Tin tức mới"
+    content_1: "bởi"
     content_2: "Michael Hartl"
   user:
-    sign_up: "Log in"
+    sign_up: "Đăng nhập"
