@@ -28,9 +28,16 @@ en:
     application:
       title: "Ruby on Rails Tutorial Sample App"
       about: "About"
+      error: "Error"
   footer:
     new: "News"
     content_1: "by"
     content_2: "Michael Hartl"
   user:
-    sign_up: "Log in"
+    sign_up: "Sign up"
+  message:
+    content: "The form contains"
+    welcome: "Welcome to the Sample App!"
+  signup_page:
+    create: "Create my account"
+    confirmation: "Confirmation"

@@ -28,9 +28,16 @@ vi:
     application:
       title: "Ruby on Rails Tutorial Sample App"
       about: "Giới thiệu"
+      error: "Error"
   footer:
     new: "Tin tức mới"
     content_1: "bởi"
     content_2: "Michael Hartl"
   user:
-    sign_up: "Đăng nhập"
+    sign_up: "Đăng ky"
+  message:
+    content: "The form contains"
+    welcome: "Welcome to the Sample App!"
+  signup_page:
+    create: "Create my account"
+    confirmation: "Confirmation"

@@ -1,8 +1,12 @@
 class User < ApplicationRecord
+  belongs_to :school
+
   before_save :email_downcase
 
-  validates :name,  presence: true,
+  validates :name, presence: true,
     length: {maximum: Settings.name.maximum}
+
+  ATTR = %i(name email password password_confirmation school_id)
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
