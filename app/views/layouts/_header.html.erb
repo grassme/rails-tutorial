@@ -5,7 +5,26 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("home.name"), root_path %></li>
         <li><%= link_to t("help.title"), help_path %></li>
-        <li><%= link_to t("user.login"), signup_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("accout.user"), "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle",
+              data: {toggle: "dropdown"} do %>
+              <%= t "accout.accout" %>
+              <%= content_tag "b", "", class: "caret" %>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("accout.profile"), current_user %></li>
+              <li><%= link_to t("accout.setting"), "#" %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t("accout.log_out"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("accout.log_in"), login_path %></li>
+        <% end %>
         <li><%= link_to t("laguage.english"), locale: :en %></li>
         <li><%= link_to t("laguage.vietnam"), locale: :vi %></li>
       </ul>

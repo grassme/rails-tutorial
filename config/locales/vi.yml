@@ -41,3 +41,13 @@ vi:
   signup_page:
     create: "Create my account"
     confirmation: "Confirmation"
+  error:
+    login: "Email/password khong ton tai!"
+  account:
+    user: "Users"
+    account: "Tai khoan"
+    profile: "Thong tin"
+    setting: "Cai dat"
+    log_out: "Dang xuat"
+    log_in: "Dang nhap"
+    new_user: "Tai khoan moi?"
