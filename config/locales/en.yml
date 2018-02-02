@@ -41,3 +41,13 @@ en:
   signup_page:
     create: "Create my account"
     confirmation: "Confirmation"
+  error:
+    login: "Invalid email/password combination"
+  account:
+    user: "Users"
+    account: "Accout"
+    profile: "Profile"
+    setting: "Setting"
+    log_out: "Log out"
+    log_in: "Log in"
+    new_user: "New user?"

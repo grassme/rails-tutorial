@@ -6,10 +6,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    current_user = get_school.users.build user_params
-    user = current_user
+    user = get_school.users.build user_params
 
     if user.save
+      log_in user
       flash[:success] = t "message.welcome"
       redirect_to user
     else

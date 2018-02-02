@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  include SessionsHelper
   belongs_to :school
 
   before_save :email_downcase
@@ -21,6 +22,7 @@ class User < ApplicationRecord
   length: {minimum: Settings.password.minimum}
 
   private
+
   def email_downcase
     email.downcase!
   end
