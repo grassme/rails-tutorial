@@ -8,6 +8,7 @@ en:
     content_3: "sample application."
     name: "Home"
     signup: "Sign up now!"
+    remember_me: "Remember me on this computer"
   help: 
     title: "Help"
     content_1: "Get help on the Ruby on Rails Tutorial at the"
