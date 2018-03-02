@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 
@@ -20,6 +20,11 @@ class SessionsController < ApplicationController
 
   def login_success user
     log_in user
+    if params[:session][:remember_me] == Settings.rememeber_login
+      remember user
+    else
+      forget user
+    end
     redirect_to user
   end
 

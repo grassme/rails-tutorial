@@ -8,6 +8,7 @@ vi:
     content_3: "sample application."
     name: "Trang chủ"
     signup: "Đăng ký ngay!"
+    remember_me: "Ghi nho dang nhap"
   help: 
     title: "Giúp đỡ"
     content_1: "Get help on the Ruby on Rails Tutorial at the"
