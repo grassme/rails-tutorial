@@ -22,6 +22,10 @@ class User < ApplicationRecord
   validates :password, presence: true,
   length: {minimum: Settings.password.minimum}, allow_nil: true
 
+  def current_user? user
+    self == user
+  end
+
   class << self
     def digest string
       if ActiveModel::SecurePassword.min_cost

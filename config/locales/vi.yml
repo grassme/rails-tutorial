@@ -36,6 +36,7 @@ vi:
     content_2: "Michael Hartl"
   user:
     sign_up: "Đăng ky"
+    update: "Cập nhật thông tin"
   message:
     content: "The form contains"
     welcome: "Welcome to the Sample App!"
@@ -52,3 +53,13 @@ vi:
     log_out: "Dang xuat"
     log_in: "Dang nhap"
     new_user: "Tai khoan moi?"
+  action:
+    change: "Thay đổi"
+    delete: "Xóa"
+    sure: "Bạn chắc không?"
+  flash:
+    success: "Update thanh cong!"
+    please_login: "Vui long login!"
+    destroy: "Da xoa!"
+  pages:
+    index: "Tat ca users"
