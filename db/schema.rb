@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180303172438) do
+ActiveRecord::Schema.define(version: 20180308072410) do
 
   create_table "schools", force: :cascade do |t|
     t.string "name"
@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(version: 20180303172438) do
     t.date "dob"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.string "activation_digest"
+    t.boolean "activated", default: false
+    t.datetime "activated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["school_id"], name: "index_users_on_school_id"
   end

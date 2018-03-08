@@ -61,5 +61,19 @@ en:
     success: "Profile updated!"
     please_login: "Please log in."
     destroy: "User deleted"
+    acc_activated: "Account activated!"
+    link_invalid: "Invalid activation link"
+    message: "Account not activated. Check your email for the activation link."
+    info: "Please check your email to activate your account."
   pages:
     index: "All users"
+  mailer:
+    subject: "Account activation"
+    welcome: "Welcome to the Sample App! Click on the link below to activate
+      your account:"
+    hi: "Hi"
+    active: "Activate"
+  password:
+    find_me: ", find me in app/views/user_mailer/password_reset.html.erb"
+
+

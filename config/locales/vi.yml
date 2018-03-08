@@ -61,5 +61,15 @@ vi:
     success: "Update thanh cong!"
     please_login: "Vui long login!"
     destroy: "Da xoa!"
+    acc_activated: "Tài khoản đã được kích hoạt!"
+    link_invalid: "Link kích hoạt không tồn tại!"
+    message: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra lại email."
+    info: "Vui long check email to kich hoat tai khoan!"
   pages:
     index: "Tat ca users"
+  mailer:
+    subject: "Kich hoat tai khoan"
+    welcome: "Chao mung den voi Sample App! Click vao link sau de kich hoat:"
+    hi: "Hi"
+  password:
+    find_me: ", find me in app/views/user_mailer/password_reset.html.erb"

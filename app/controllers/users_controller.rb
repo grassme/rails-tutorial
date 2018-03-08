@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   attr_reader :user
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.activated.paginate page: params[:page]
   end
 
   def new
@@ -15,17 +15,18 @@ class UsersController < ApplicationController
 
   def create
     user = get_school.users.build user_params
-
     if user.save
-      log_in user
-      flash[:success] = t "message.welcome"
-      redirect_to user
+      user.send_activation_email
+      flash[:info] = t "flash.info"
+      redirect_to root_url
     else
       render :new
     end
   end
 
-  def show; end
+  def show
+    redirect_to root_url unless user.activated?
+  end
 
   def edit; end
 
