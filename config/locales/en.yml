@@ -36,6 +36,7 @@ en:
     content_2: "Michael Hartl"
   user:
     sign_up: "Sign up"
+    update: "Update profile"
   message:
     content: "The form contains"
     welcome: "Welcome to the Sample App!"
@@ -52,3 +53,13 @@ en:
     log_out: "Log out"
     log_in: "Log in"
     new_user: "New user?"
+  action:
+    change: "change"
+    delete: "delete"
+    sure: "You sure?"
+  flash:
+    success: "Profile updated!"
+    please_login: "Please log in."
+    destroy: "User deleted"
+  pages:
+    index: "All users"
