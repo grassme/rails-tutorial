@@ -8,6 +8,7 @@ class User < ApplicationRecord
   attr_reader :remember_token, :activation_token, :reset_token
 
   belongs_to :school
+  has_many :microposts, dependent: :destroy
 
   has_secure_password
 
@@ -84,6 +85,10 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+  
   private
 
   def email_downcase
